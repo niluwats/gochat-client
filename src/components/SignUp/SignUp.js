@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import "./SignUp.css";
 import axios from "../../api/axios";
+import { useNavigate } from "react-router-dom";
 
-export default function Login() {
+export default function Register() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -24,7 +25,7 @@ export default function Login() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "/login",
+        "/register",
         JSON.stringify({ username, password }),
         {
           headers: { "Content-Type": "applicaion/json" },
@@ -37,7 +38,7 @@ export default function Login() {
       if (response.data.status === false) {
         window.alert(response.data.message);
       } else {
-        navigate("/chat");
+        navigate("/login");
       }
 
       setUsername("");
@@ -46,6 +47,7 @@ export default function Login() {
       window.alert(err);
     }
   };
+
   return (
     <div className="form-container">
       <form onSubmit={handleSubmit}>
@@ -75,7 +77,7 @@ export default function Login() {
           />
         </div>
         <button type="submit" className="btn btn-primary btn-lg">
-          Login
+          Sign Up
         </button>
       </form>
     </div>

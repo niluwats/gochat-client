@@ -1,7 +1,7 @@
 export default function Chat() {
   return (
     <>
-      <button>Chat</button>
+      <button>Let's Chat</button>
     </>
   );
 }

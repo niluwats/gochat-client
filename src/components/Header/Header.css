@@ -1,0 +1,11 @@
+.header {
+    padding: 10px;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

@@ -1,0 +1,22 @@
+.landing-heading-container {
+    display: flex;
+    justify-content: center;
+    padding: 150px;
+}
+
+.landing-title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn1-container {
+    margin-right: 1%;
+}
+
+.btn2-container {
+    margin-left: 1%;
+}
