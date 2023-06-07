@@ -29,7 +29,7 @@ export default function Register() {
         JSON.stringify({ username, password }),
         {
           headers: { "Content-Type": "applicaion/json" },
-          withCredentials: true,
+          // withCredentials: true,
         }
       );
 
