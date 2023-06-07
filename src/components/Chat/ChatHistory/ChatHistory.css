@@ -1,0 +1,27 @@
+.gridContainer {
+    display: grid;
+    gap: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 400px;
+    align-content: baseline;
+}
+
+.fromDiv {
+    text-align: end;
+    margin-left: 65%;
+    align-self: end;
+    border-radius: 10px;
+    padding: 2%;
+    width: 200px;
+}
+
+.toDiv {
+    color: white;
+    margin-left: 5%;
+    display: grid;
+    justify-content: start;
+    border-radius: 10px;
+    padding: 2%;
+    width: 200px;
+}

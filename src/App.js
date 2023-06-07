@@ -9,7 +9,7 @@ import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-    <>
+    <div className="App">
       <Header />
       <Routes>
         <Route path="/" element={<Landing />} />
@@ -18,7 +18,7 @@ function App() {
         <Route path="/chat" element={<Chat />} />
       </Routes>
       <Footer />
-    </>
+    </div>
   );
 }
 

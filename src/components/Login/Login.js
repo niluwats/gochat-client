@@ -25,11 +25,7 @@ export default function Login() {
     try {
       const response = await axios.post(
         "/login",
-        JSON.stringify({ username, password }),
-        {
-          headers: { "Content-Type": "applicaion/json" },
-          withCredentials: true,
-        }
+        JSON.stringify({ username, password })
       );
 
       console.log(response);
@@ -37,7 +33,9 @@ export default function Login() {
       if (response.data.status === false) {
         window.alert(response.data.message);
       } else {
-        navigate("/chat");
+        sessionStorage.setItem(username, response.data.data);
+
+        navigate(`/chat?user=${username}`);
       }
 
       setUsername("");
